@@ -34,6 +34,7 @@
  * The number of minutes it takes to prepare a single layer.
  */
 const PREPARATION_MINUTES_PER_LAYER = 2;
+export const EXPECTED_MINUTES_IN_OVEN = 40;
 
 /**
  * Determines the number of minutes the lasagna still needs to remain in the
@@ -43,7 +44,8 @@ const PREPARATION_MINUTES_PER_LAYER = 2;
  * @returns {number} the number of minutes remaining
  */
 export function remainingMinutesInOven(actualMinutesInOven) {
-  throw new Error('Remove this line and implement the function');
+  return EXPECTED_MINUTES_IN_OVEN - actualMinutesInOven
+  
 }
 
 /**
