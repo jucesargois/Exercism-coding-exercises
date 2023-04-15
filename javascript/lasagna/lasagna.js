@@ -67,5 +67,6 @@ export function preparationTimeInMinutes(numberOfLayers) {
  * @returns {number} the total working time
  */
 export function totalTimeInMinutes(numberOfLayers, actualMinutesInOven) {
-  throw new Error('Remove this line and implement the function');
+  let nLayers = preparationTimeInMinutes(numberOfLayers)
+  return nLayers + actualMinutesInOven
 }
