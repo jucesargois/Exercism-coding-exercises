@@ -25,8 +25,9 @@
  * @param {number} ratePerHour
  * @returns {number} the rate per day
  */
+const WORKED_HOURS = 8;
 export function dayRate(ratePerHour) {
-  throw new Error('Remove this line and implement the function');
+  return WORKED_HOURS * ratePerHour
 }
 
 /**
