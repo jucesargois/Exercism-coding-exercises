@@ -74,7 +74,8 @@ export function removeItemFromTop(cards) {
  * @returns {number[]} the cards including the new card
  */
 export function insertItemAtBottom(cards, newCard) {
-  throw new Error('Implement the insertItemAtBottom function');
+  cards.unshift(newCard)
+  return cards
 }
 
 /**
@@ -85,7 +86,8 @@ export function insertItemAtBottom(cards, newCard) {
  * @returns {number[]} the cards without the removed card
  */
 export function removeItemAtBottom(cards) {
-  throw new Error('Implement the removeItemAtBottom function');
+  cards.shift()
+  return cards
 }
 
 /**
@@ -97,5 +99,5 @@ export function removeItemAtBottom(cards) {
  * @returns {boolean} true if there are exactly stackSize number of cards, false otherwise
  */
 export function checkSizeOfStack(cards, stackSize) {
-  throw new Error('Implement the checkSizeOfStack function');
+  return cards.length === stackSize
 }
