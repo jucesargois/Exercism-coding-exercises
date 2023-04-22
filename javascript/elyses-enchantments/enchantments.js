@@ -9,7 +9,8 @@
  * @returns {number} the card
  */
 export function getItem(cards, position) {
-  throw new Error('Implement the getItem function');
+  let card = cards[position]
+  return card
 }
 
 /**
@@ -22,7 +23,8 @@ export function getItem(cards, position) {
  * @returns {number[]} the cards with the change applied
  */
 export function setItem(cards, position, replacementCard) {
-  throw new Error('Implement the setItem function');
+  cards[position] = replacementCard
+  return cards
 }
 
 /**
