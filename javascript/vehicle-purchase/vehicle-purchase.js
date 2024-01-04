@@ -45,5 +45,6 @@ export function chooseVehicle(option1, option2) {
  */
 // @ts-ignore
 export function calculateResellPrice(originalPrice, age) {
+  
   throw new Error('Please implement the calculateResellPrice function');
 }
