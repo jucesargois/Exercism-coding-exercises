@@ -11,8 +11,11 @@
  * @returns {number} total bird count
  */
 export function totalBirdCount(birdsPerDay) {
-
-  throw new Error('Please implement the totalBirdCount function');
+  let result = 0 
+  for(let i = 0; i < birdsPerDay.length; i++){
+    result += birdsPerDay[i]
+  }
+  return result
 }
 
 /**
